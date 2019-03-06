@@ -20,8 +20,8 @@
   const bar = document.querySelector('.speed-bar');
   const video = document.querySelector('.flex');
 
-  speed.addEventListener('mousemove', function(e) {
-    const y = e.pageY - this.offsetTop;
+  speed.addEventListener('mousemove', function(event) {
+    const y = event.pageY - this.offsetTop;
     const percent = y / this.offsetHeight;
     const min = 0.4;
     const max = 4;
